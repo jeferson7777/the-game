@@ -72,11 +72,7 @@ body {
   color: green;
 }
 
-/* .headMario {
-background-size: contain;
-font-size: 20px;
-margin-top: 40px;
-} */
+
 
 .dead {
   background-image: url('https://media.giphy.com/media/dkuZHIQsslFfy/giphy.gif');
@@ -97,10 +93,3 @@ button {
 }
 
 
-/* .container > div {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  margin: auto;
-  background-color: red;
-} */
