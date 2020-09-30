@@ -74,19 +74,19 @@ body {
 
 
 
-.dead {
+/* .dead {
   background-image: url('https://media.giphy.com/media/dkuZHIQsslFfy/giphy.gif');
   width: 700px;
   height: 600px;
   background-size: cover
-}
+} */
 
 button {
     display: flex;
     flex-direction: column;
     font-size: 30px;
     text-align: center;
-    /* background-color: black; */
+    
     color: red;
     border-radius: 10px;
     

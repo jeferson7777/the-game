@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const resetBtn = document.querySelector('button')
   document.querySelector('.dead')   //podria añadir una constante aqui¿?
   let timer
+  ///
 
 
   // create a grid
@@ -26,10 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     snake.forEach(index => squares[index].classList.remove('snake'))
   }
 
-  //
-  function drawSnake() {
-    snake.forEach(index => squares[index].classList.add('snake')) //hace refencia a snake y lo esta creando dentro de square  y en el index
-  }
 
 
   /////////////////////////////
