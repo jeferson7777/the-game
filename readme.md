@@ -13,3 +13,4 @@ Use your cursor keys to move snake: up, left, right, and down. You will need to 
 ## Documentation
 MDN -W3schools-Picachu de Mario, una amiga que es informatica.
 [requeriments](./docs/readme.md)
+https://jeferson7777.github.io/the-game/
