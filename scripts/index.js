@@ -15,18 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // Creamos la cuadricula grande
-  for (let index = 0; index < width * width; index + 1) {
+  for (let index = 0; index < width * width; index = index + 1) {
     const square = document.createElement('div')
     squares.push(square)
     grid.appendChild(square)
-    square.innerText = index;
+    square.innerText = index
   }
   //Función para que aparezca la serpiente
   function drawSnake() {
     snake.forEach(index => squares[index].classList.add('snake'))
   }
 
-  // Funcion cuando se choca con su propia cola.
+  // Función cuando se choca con su propia cola.
   function killSnake() {
     if (snake.slice(1).includes(snake[0])) {
       return gameOver()
