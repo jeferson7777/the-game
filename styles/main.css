@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -26,8 +25,8 @@ body {
 
 .grid div {
   flex-grow: 1;
-  height: 33.33px;  /*quiero 18 casillas y cada una debe medir 33.33px */
-  width: 33.33px;  /*Porque 600 / 18 = 33.33*/
+  height: 33.33px; /*quiero 18 casillas y cada una debe medir 33.33px */
+  width: 33.33px; /*Porque 600 / 18 = 33.33*/
   border: 1px solid transparent;
   box-shadow: 0 0 20px 0 rgb(182, 21, 21);
 }
@@ -72,8 +71,6 @@ body {
   color: green;
 }
 
-
-
 .dead {
   width: 600px;
   height: 400px;
@@ -81,32 +78,15 @@ body {
 }
 
 button {
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    text-align: center;
-    font-family: Roboto;
-    background-color: rgb(0, 0, 0);
-    color: red;
-    border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: center;
+  font-family: Roboto;
+  background-color: rgb(0, 0, 0);
+  color: red;
+  border-radius: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
 * {
@@ -204,5 +184,3 @@ button {
     box-shadow: 0 0 20px 0 rgba(44, 187, 0, 0.959);
     
 } */
-
-
