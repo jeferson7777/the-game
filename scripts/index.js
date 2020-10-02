@@ -55,16 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
   //Función para determinar las colisiones con las paredes
 
   function moveSnake() {
-    console.log(snake);
-    if (
-      (snake[0] % width === 0 && direction === 'left') ||
-      (snake[0] % width === width - 1 && direction === 'right') ||
-      (snake[0] - width < 0 && direction === 'up') ||
-      (snake[0] >= width * (width - 1) && direction === 'down')
-    ) {
-      return gameOver();
+    console.log(snake)
+    if (snake[0] % width === 0 && direction === 'left' ||
+      snake[0] % width === width - 1 && direction === 'right' ||
+      snake[0] - width < 0 && direction === 'up' ||
+      snake[0] >= width * (width - 1) && direction === 'down') {
+      return gameOver()
     }
-    eraseSnake();
+    eraseSnake()
+
 
     //Definicion de los controles
 
@@ -130,22 +129,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //conotroles
   document.addEventListener('keydown', (e) => {
-    e.preventDefault();
-    switch (e.key) {
-      case 37:
-        if (direction !== 'right') direction = 'left';
-        break;
-      case 38:
-        if (direction !== 'down') direction = 'up';
-        break;
-      case 39:
-        if (direction !== 'left') direction = 'right';
-        break;
-      case 40:
-        if (direction !== 'up') direction = 'down';
-        break;
+    e.preventDefault()
+    switch (e.keyCode) {
+      case 37: if (direction !== 'right') direction = 'left'
+        break
+      case 38: if (direction !== 'down') direction = 'up'
+        break
+      case 39: if (direction !== 'left') direction = 'right'
+        break
+      case 40: if (direction !== 'up') direction = 'down'
+        break
     }
-  });
+  })
 
   //evento para empezar el juego
   resetBtn.addEventListener('click', () => {
